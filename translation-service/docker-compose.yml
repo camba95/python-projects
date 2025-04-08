@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:16.2-alpine
+    environment:
+      - POSTGRES_DB=translation_service
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5444:5432
